@@ -43,6 +43,8 @@
             logger = NLog.LogManager.GetLogger("MyLogger") 
             logger.Fatal(ex, ex.Message)
 
+            NLog.LogManager.Shutdown()
+
             Server.ClearError()
             Response.Redirect("Error.aspx") 
             // Server.Transfer("Error.aspx", *true)
