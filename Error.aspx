@@ -1,4 +1,4 @@
-﻿<%@ Page Language="AVR" AutoEventWireup="false" CodeFile="Index.aspx.vr" Inherits="Index" %>
+﻿<%@ Page Language="AVR" AutoEventWireup="false" CodeFile="Error.aspx.vr" Inherits="Error" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
@@ -9,11 +9,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        A fatal error occurred. See the error logs for details.    
     </div>
-        <p>
-            <asp:Button ID="Button1" runat="server"  Text="Create log entries" />
-        </p>
+    <div>   
+        <a href="index.aspx">Go back to home page</a>
+    </div>
     </form>
 </body>
 </html>
